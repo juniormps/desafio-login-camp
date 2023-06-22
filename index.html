@@ -5,11 +5,55 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Camp.in</title>
+	<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
-	<p>
-		Teste Camp.in
-	</p>
-	
+	<header>
+		<div>
+			<img src="imagens/logo.svg" alt="logotipo">
+		</div>
+
+		<div>
+			<img src="imagens/log-in.svg" alt="login">
+			<p>
+				Faça seu login
+			</p>
+			<p>
+				Entre com suas informações de cadastro
+			</p>
+		</div>
+	</header>
+
+	<main>
+		<div id="formulario">
+			<form action="cadastro.php" method="post" autocomplete="on">
+				<div class="campo">
+					<label for="ilogin">E-mail</label>
+					<input type="email" name="login" id="ilogin" placeholder="Digite seu e-mail" autocomplete="email" maxlength="30" required>
+				</div>
+
+				<div class="campo">
+					<label for="isenha">Senha</label>
+					<input type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" minlength="8" maxlength="20" required>
+				</div>
+
+				<div id="lembrete">
+					<input type="checkbox" name="lembrar" id="ilembrar">
+					<label for="ilembrar">Lembre-me</label>
+
+					<button>Esqueci minha senha</button>					
+				</div>
+
+				<div id="entrar">
+					<input type="submit" value="Entrar">
+				</div>
+
+				<div id="registrar">
+					<p>Não tem uma conta?</p>
+					<button>Registre-se</button>
+				</div>
+			</form>
+		</div>
+	</main>
 </body>
 </html>
