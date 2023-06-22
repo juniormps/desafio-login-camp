@@ -5,23 +5,27 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Camp.in</title>
+	<link rel="stylesheet" href="estilos/style.css">
 	<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
 	<header>
 		<div>
-			<img src="imagens/logo.svg" alt="logotipo">
+			<img id="imglogo" src="imagens/logo.svg" alt="logotipo">
 		</div>
 
-		<div>
-			<img src="imagens/log-in.svg" alt="login">
-			<p>
+		<div id="titulo">
+			<img id="imglogin" src="imagens/log-in.svg" alt="login">
+			<h1>
 				Faça seu login
-			</p>
-			<p>
-				Entre com suas informações de cadastro
-			</p>
+			</h1>
 		</div>
+		
+		<div>
+			<h2>
+				Entre com suas informações de cadastro
+			</h2>
+		</div>	
 	</header>
 
 	<main>
@@ -38,10 +42,14 @@
 				</div>
 
 				<div id="lembrete">
-					<input type="checkbox" name="lembrar" id="ilembrar">
-					<label for="ilembrar">Lembre-me</label>
+					<div>
+						<input type="checkbox" name="lembrar" id="ilembrar">
+						<label for="ilembrar">Lembre-me</label>
+					</div>
 
-					<button>Esqueci minha senha</button>					
+					<div>
+						<button>Esqueci minha senha</button>
+					</div>				
 				</div>
 
 				<div id="entrar">
@@ -49,8 +57,7 @@
 				</div>
 
 				<div id="registrar">
-					<p>Não tem uma conta?</p>
-					<button>Registre-se</button>
+					<button>Não tem uma conta? <span>Registre-se</span></button>
 				</div>
 			</form>
 		</div>
