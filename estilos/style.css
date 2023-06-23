@@ -103,8 +103,16 @@ flex-direction: column;
 gap: 4px;
 }
 
+.campo input {
+	height: 40px;
+	border: 2px solid --text-base;
+	border-radius: 5px;
+	background-color: var(--background);
+}
+
 #lembrete {
 	display: flex;
+	justify-content: space-between;
 }
 
 #lembrete label {
@@ -124,6 +132,8 @@ gap: 4px;
 }
 
 #entrar input {
+	width: 100%;
+	height: 40px;
 	background-color: var(--primary-color);
 	color: var(--form-background);
 	font-family: var(--font-2);
@@ -132,7 +142,12 @@ gap: 4px;
 	text-transform: uppercase;
 
 	border: none;
-	border-radius: 2.5px;
+	border-radius: 3px;
+}
+
+#registrar {
+	display: flex;
+	justify-content: center;
 }
 
 #registrar button {
