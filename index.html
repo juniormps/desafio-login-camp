@@ -31,38 +31,36 @@
 	</header>
 
 	<main>
-		<div id="formulario">
-			<form action="cadastro.php" method="post" autocomplete="on">
-				<div class="campo">
-					<label for="ilogin">E-mail</label>
-					<input type="email" name="login" id="ilogin" placeholder="Digite seu e-mail" autocomplete="email" maxlength="30" required>
+		<form action="cadastro.php" method="post" autocomplete="on">
+			<div class="campo">
+				<label for="ilogin">E-mail</label>
+				<input type="email" name="login" id="ilogin" placeholder="Digite seu e-mail" autocomplete="email" maxlength="30" required>
+			</div>
+
+			<div class="campo">
+				<label for="isenha">Senha</label>
+				<input type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" minlength="8" maxlength="20" required>
 				</div>
 
-				<div class="campo">
-					<label for="isenha">Senha</label>
-					<input type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" minlength="8" maxlength="20" required>
+			<div id="lembrete">
+				<div>
+					<input type="checkbox" name="lembrar" id="ilembrar">
+					<label for="ilembrar">Lembre-me</label>
 				</div>
 
-				<div id="lembrete">
-					<div>
-						<input type="checkbox" name="lembrar" id="ilembrar">
-						<label for="ilembrar">Lembre-me</label>
-					</div>
+				<div>
+					<button>Esqueci minha senha</button>
+				</div>				
+			</div>
 
-					<div>
-						<button>Esqueci minha senha</button>
-					</div>				
-				</div>
+			<div id="entrar">
+				<input type="submit" value="Entrar">
+			</div>
 
-				<div id="entrar">
-					<input type="submit" value="Entrar">
-				</div>
-
-				<div id="registrar">
-					<button>Não tem uma conta? <span>Registre-se</span></button>
-				</div>
-			</form>
-		</div>
+			<div id="registrar">
+				<button>Não tem uma conta? <span>Registre-se</span></button>
+			</div>
+		</form>
 	</main>
 </body>
 </html>
