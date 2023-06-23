@@ -34,7 +34,8 @@ body {
 }
 
 header {
-	border: 1px solid white;
+	/*border: 1px solid white;*/
+	margin-top: 40px;
 
 	width: 334px;
 	height: 122px;
@@ -81,7 +82,7 @@ h2 {
 }
 
 main {
-	border: 1px solid white;
+	/*border: 1px solid white;*/
 
 	width: 334px;
 	margin-top: 16px;
