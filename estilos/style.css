@@ -95,20 +95,68 @@ form {
 }
 
 .campo{
-color: var(--text-base);  
-font-family: var(--font-2);
-font-size: 0.9rem;
+	color: var(--text-base);  
+	font-family: var(--font-2);
+	font-size: 0.9rem;
 
-display: flex;
-flex-direction: column;
-gap: 4px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
 }
 
-.campo input {
+.caixatexto {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 5px;
+
+	padding-left: 7px;
+	padding-right: 7px;
+	border: 1px solid var(--text-base);
 	height: 40px;
-	border: 2px solid --text-base;
-	border-radius: 5px;
+	border-radius: 4px;
+}
+
+.caixatexto span {
+	width: 38px;
+	height: 38px;
+	background-image: url('../imagens/mail.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
+
+.caixatexto button {
 	background-color: var(--background);
+	border: none;
+}
+
+.caixatexto input {
+	flex-grow: 1;
+
+	height: 38px;
+	border: none;
+	background-color: var(--background);
+	/*background-image: url('../imagens/mail.svg');
+	background-repeat: no-repeat;
+	background-position: left center;*/
+}
+
+.caixatexto:focus-within {
+	border: 1px solid var(--primary-color);
+}
+
+.caixatexto input:focus-within {
+	outline: 0;
+	/*background-image: url('../imagens/mail-focus.svg');
+	background-repeat: no-repeat;
+	background-position: left center;*/
+}
+
+.caixatexto span:focus-within {
+	background-image: url('../imagens/mail-focus.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 #lembrete {

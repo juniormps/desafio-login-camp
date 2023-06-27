@@ -34,13 +34,21 @@
 		<form action="cadastro.php" method="post" autocomplete="on">
 			<div class="campo">
 				<label for="ilogin">E-mail</label>
-				<input type="email" name="login" id="ilogin" placeholder="Digite seu e-mail" autocomplete="email" maxlength="30" required>
+				<section class="caixatexto">
+					<!-- <img src="imagens/mail.svg" alt="simbolo e-mail"> -->
+					<span><!-- Aqui vai a imagem do e-meil --></span>
+					<input type="email" name="login" id="ilogin" placeholder="Digite seu e-mail" autocomplete="email" maxlength="30" required>
+				</section>
 			</div>
 
 			<div class="campo">
 				<label for="isenha">Senha</label>
-				<input type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" minlength="8" maxlength="20" required>
-				</div>
+				<section class="caixatexto">
+					<!-- <img src="imagens/lock.svg" alt="cadeado"> -->
+					<input type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" minlength="8" maxlength="20" required>
+					<button><img src="imagens/eye.svg" alt=""></button>
+				</section>
+			</div>
 
 			<div id="lembrete">
 				<div>
