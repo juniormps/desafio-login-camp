@@ -34,16 +34,16 @@
 		<form action="cadastro.php" method="post" autocomplete="on">
 			<div class="campo">
 				<label for="ilogin">E-mail</label>
-				<section class="caixatexto">
+				<section class="caixaemail">
 					<!-- <img src="imagens/mail.svg" alt="simbolo e-mail"> -->
-					<span><!-- Aqui vai a imagem do e-meil --></span>
+					<!--<span>Aqui vai a imagem do e-meil</span>-->
 					<input type="email" name="login" id="ilogin" placeholder="Digite seu e-mail" autocomplete="email" maxlength="30" required>
 				</section>
 			</div>
 
 			<div class="campo">
 				<label for="isenha">Senha</label>
-				<section class="caixatexto">
+				<section class="caixasenha">
 					<!-- <img src="imagens/lock.svg" alt="cadeado"> -->
 					<input type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" minlength="8" maxlength="20" required>
 					<button><img src="imagens/eye.svg" alt=""></button>
@@ -51,7 +51,7 @@
 			</div>
 
 			<div id="lembrete">
-				<div>
+				<div id="caixacheck">
 					<input type="checkbox" name="lembrar" id="ilembrar">
 					<label for="ilembrar">Lembre-me</label>
 				</div>

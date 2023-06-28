@@ -104,64 +104,137 @@ form {
 	gap: 4px;
 }
 
-.caixatexto {
+.caixaemail {
+	height: 40px;
+	border: 1px solid var(--text-base);
+	border-radius: 4px;
+
+	background-image: url('../imagens/mail.svg');
+	background-repeat: no-repeat;
+	background-position: 7px center;
+
 	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+	justify-content: flex-end;
+	/*align-items: center;
 	gap: 5px;
 
 	padding-left: 7px;
-	padding-right: 7px;
-	border: 1px solid var(--text-base);
-	height: 40px;
-	border-radius: 4px;
+	padding-right: 7px;*/
+	
 }
 
-.caixatexto span {
-	width: 38px;
+.caixaemail:focus-within {
+	border: 1px solid var(--primary-color);
+
+	background-image: url('../imagens/mail-focus.svg');
+	background-repeat: no-repeat;
+	background-position: 7px center;
+}
+
+.caixaemail input {
+	width: 88%;
 	height: 38px;
+	border: none;
+	outline: 0;
+	background-color: var(--background);
+}
+
+.caixasenha {
+	height: 40px;
+	border: 1px solid var(--text-base);
+	border-radius: 4px;
+
 	background-image: url('../imagens/mail.svg');
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: 7px center;
 
+	display: flex;
+	justify-content: flex-end;
 }
 
-.caixatexto button {
-	background-color: var(--background);
-	border: none;
+.caixasenha:focus-within {
+	border: 1px solid var(--primary-color);
+
+	background-image: url('../imagens/lock-focus.svg');
+	background-repeat: no-repeat;
+	background-position: 7px center;
 }
 
-.caixatexto input {
-	flex-grow: 1;
+.caixasenha input {
+	display: flex;
+	flex-basis: 76%;
 
 	height: 38px;
 	border: none;
+	outline: 0;
 	background-color: var(--background);
 	/*background-image: url('../imagens/mail.svg');
 	background-repeat: no-repeat;
 	background-position: left center;*/
 }
 
-.caixatexto:focus-within {
-	border: 1px solid var(--primary-color);
+/*.caixatexto span {
+	width: 38px;
+	height: 38px;
+	background-image: url('../imagens/mail.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}*/
+
+.caixasenha button {
+	display: flex;
+	flex-basis: 12%;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--background);
+	border: none;
 }
+
+/*
 
 .caixatexto input:focus-within {
 	outline: 0;
-	/*background-image: url('../imagens/mail-focus.svg');
+	background-image: url('../imagens/mail-focus.svg');
 	background-repeat: no-repeat;
-	background-position: left center;*/
+	background-position: left center;
 }
 
 .caixatexto span:focus-within {
 	background-image: url('../imagens/mail-focus.svg');
 	background-repeat: no-repeat;
 	background-position: center center;
-}
+}*/
 
 #lembrete {
 	display: flex;
 	justify-content: space-between;
+}
+
+#caixacheck {
+	display: flex;
+	align-items:center;
+	gap: 5px;
+}
+
+#lembrete input {
+	all: unset;
+	border: 1px solid var(--text-base);
+	border-radius: 3px;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+}
+
+#lembrete input:checked {
+	background-color: var(--primary-color);
+	background-image: url('../imagens/check.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	border: none;
+	width: 17px;
+	height: 17px;
 }
 
 #lembrete label {
