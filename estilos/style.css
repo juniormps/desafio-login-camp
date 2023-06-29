@@ -226,6 +226,10 @@ form {
 	cursor: pointer;
 }
 
+#lembrete button:hover {
+	transform: translate(2px, -2px);
+}
+
 #entrar input {
 	width: 100%;
 	height: 40px;
@@ -265,6 +269,10 @@ color: var(--primary-color);
 font-family: var(--font-2);
 font-size: 0.7rem;
 font-weight: bold;
+}
+
+#registrar button:hover {
+	transform: translate(2px, -2px);
 }
 
 
