@@ -7,27 +7,57 @@
 		justify-content: center;
 		align-items: center;
 
-		background-image: url('../imagens/logo.svg');
+		/*background-image: url('../imagens/logo.svg');
 		background-repeat: no-repeat;
-		background-position: 40px 40px;
+		background-position: 40px 40px;*/
 	}
 
 	#principal {
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
+		justify-content: space-between;
+		align-items: center;
+	
+
+		width: 100vw;
+		height: 100vh;
+		padding-bottom: calc((100vh - 450px) / 2);
+
+	}
+
+	#logo {
+		display: flex;
+		align-self: flex-start;
+		padding: 40px 0 0 40px;
+	}
+
+	#formulario {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		align-items: center;
 		width: 572px;
 		height: 450px;
-		padding-top: 5px;
-		/*border: 1px solid white;*/
+		padding-bottom: 40px;
+		/*padding-top: 5px;
+		border: 1px solid white;*/
 		background-color: var(--form-background);
 		border-radius: 3px;
 	}
 
 	header {
-		background-image: none;
-		height: 65px;
+		/*border: 1px solid white;*/
+
+		width: 334px;
+		height: 60px;
+		justify-content: center;
+	}
+
+	header a img {
+		display: none;
+
+		/*background-image: none;
+		height: 65px;*/
 	}
 
 	.caixaemail input {

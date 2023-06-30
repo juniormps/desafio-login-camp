@@ -11,60 +11,65 @@
 </head>
 <body>
 	<section id="principal">
-		<header>
-			<!--<section>
-				<img id="imglogo" src="imagens/logo.svg" alt="logotipo">
-			</section>-->
-			<section>
-				<div id="titulo">
-					<img id="imglogin" src="imagens/log-in.svg" alt="login">
-					<h1>
-						Faça seu login
-					</h1>
-				</div>
+		<section id="logo">
+			<a href="https://juniormps.github.io/"><img src="imagens/logo.svg" alt="logotipo"></a>
+		</section>
+		<section id="formulario">
+			<header>
+				<section>
+					<a href="https://juniormps.github.io/"><img id="imglogo" src="imagens/logo.svg" alt="logotipo"></a>
+				</section>
+				<section>
+					<div id="titulo">
+						<img id="imglogin" src="imagens/log-in.svg" alt="login">
+						<h1>
+							Faça seu login
+						</h1>
+					</div>
 		
-				<div>
-					<h2>
-						Entre com suas informações de cadastro
-					</h2>
-				</div>
-			</section>
-		</header>
-		<main>
-			<form action="cadastro.php" method="post" autocomplete="on">
-				<div class="campo">
-					<label for="ilogin">E-mail</label>
-					<section class="caixaemail">
-						<!-- <img src="imagens/mail.svg" alt="simbolo e-mail"> -->
-						<!--<span>Aqui vai a imagem do e-meil</span>-->
-						<input type="email" name="login" id="ilogin" placeholder="Digite seu e-mail" autocomplete="email" maxlength="30" required>
-					</section>
-				</div>
-				<div class="campo">
-					<label for="isenha">Senha</label>
-					<section class="caixasenha">
-						<!-- <img src="imagens/lock.svg" alt="cadeado"> -->
-						<input type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" minlength="8" maxlength="20" required>
-						<button><img src="imagens/eye.svg" alt=""></button>
-					</section>
-				</div>
-				<div id="lembrete">
-					<div id="caixacheck">
-						<input type="checkbox" name="lembrar" id="ilembrar">
-						<label for="ilembrar">Lembre-me</label>
-					</div>
 					<div>
-						<button>Esqueci minha senha</button>
+						<h2>
+							Entre com suas informações de cadastro
+						</h2>
 					</div>
-				</div>
-				<div id="entrar">
-					<input type="submit" value="Entrar">
-				</div>
-				<div id="registrar">
-					<p>Não tem uma conta?</p> <button>Registre-se</button>
-				</div>
-			</form>
-		</main>
+				</section>
+			</header>
+			<main>
+				<form action="cadastro.php" method="post" autocomplete="on">
+					<div class="campo">
+						<label for="ilogin">E-mail</label>
+						<section class="caixaemail">
+							<!-- <img src="imagens/mail.svg" alt="simbolo e-mail"> -->
+							<!--<span>Aqui vai a imagem do e-meil</span>-->
+							<input type="email" name="login" id="ilogin" placeholder="Digite seu e-mail" autocomplete="email" maxlength="30" required>
+						</section>
+					</div>
+					<div class="campo">
+						<label for="isenha">Senha</label>
+						<section class="caixasenha">
+							<!-- <img src="imagens/lock.svg" alt="cadeado"> -->
+							<input type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" minlength="8" maxlength="20" required>
+							<button><img src="imagens/eye.svg" alt=""></button>
+						</section>
+					</div>
+					<div id="lembrete">
+						<div id="caixacheck">
+							<input type="checkbox" name="lembrar" id="ilembrar">
+							<label for="ilembrar">Lembre-me</label>
+						</div>
+						<div>
+							<button>Esqueci minha senha</button>
+						</div>
+					</div>
+					<div id="entrar">
+						<input type="submit" value="Entrar">
+					</div>
+					<div id="registrar">
+						<p>Não tem uma conta?</p> <button>Registre-se</button>
+					</div>
+				</form>
+			</main>
+		</section>
 	</section>
 	<section id="imagem">
 
