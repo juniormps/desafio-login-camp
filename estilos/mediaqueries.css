@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*versão para tablets*/
+
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		background-image: url('../imagens/logo.svg');
+		background-repeat: no-repeat;
+		background-position: 40px 40px;
+	}
+
+	#principal {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		width: 572px;
+		height: 450px;
+		padding-top: 5px;
+		/*border: 1px solid white;*/
+		background-color: var(--form-background);
+	}
+
+	header {
+		background-image: none;
+		height: 65px;
+	}
+
+	.caixaemail input {
+		background-color: var(--form-background);
+	}
+
+	.caixasenha input {
+		background-color: var(--form-background);
+	}
+
+	.caixasenha button {
+		background-color: var(--form-background);
+	}
+	
+	#lembrete button {
+		background-color: var(--form-background);
+	}
+
+	#registrar button {
+		background-color: var(--form-background);
+	}
+}

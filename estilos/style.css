@@ -42,7 +42,11 @@ header {
 
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
+	justify-content: flex-end;
+
+	background-image: url('../imagens/logo.svg');
+	background-repeat: no-repeat;
 
 }
 
@@ -140,7 +144,7 @@ form {
 	border: 1px solid var(--text-base);
 	border-radius: 4px;
 
-	background-image: url('../imagens/mail.svg');
+	background-image: url('../imagens/lock.svg');
 	background-repeat: no-repeat;
 	background-position: 7px center;
 
