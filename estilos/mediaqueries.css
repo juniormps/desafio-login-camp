@@ -80,3 +80,28 @@
 		background-color: var(--form-background);
 	}
 }
+
+@media screen and (min-width: 992px) { /*versão para desktop  and (max-width: 1200px)*/
+
+	body {
+		display: flex;
+		flex-direction: row;
+	}
+
+	#principal {
+		width: 50vw;
+	}
+
+	#imagem {
+		width: 50vw;
+		height: 100vh;
+		/*border: 1px solid white;*/
+
+		background-image: url('../imagens/side-image.jpg');
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position: left bottom;
+
+	}
+
+}
