@@ -1,4 +1,4 @@
-# projeto-login-camp
+# desafio-login-camp
 Desafios proposto pela Rocketseat para criar o layout de uma página de login.
 
 Linguagens utilizadas: HTML e CSS
